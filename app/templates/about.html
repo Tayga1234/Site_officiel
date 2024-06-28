@@ -1,0 +1,152 @@
+{% extends 'base.html' %}
+    {% load static%}
+    {% block about %}active{% endblock %}
+    {% block title %}About{% endblock %}
+{% block content %}
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section class="breadcrumbs fixed-top">
+      <div class="container">
+
+        <ol>
+          <li><a href="{% url 'home' %}">{{abouts.title1}}</a></li>
+          <li>{{abouts.title2}}</li>
+        </ol>
+        <h2>{{abouts.title3}} </h2>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img src="{{ abouts.image1.url }}" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="{{ abouts.image2.url }}" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="{{ abouts.image3.url }}" alt="">
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            
+            <div class="portfolio-description">
+              <h2>{{abouts.title_resume}}</h2>
+              <p>
+                {{abouts.text_resume}}
+              </p>
+            </div>
+            <div class="portfolio-info">
+              <h3>{{abouts.Name_Urbain}}</h3>
+              <ul>
+                <li><strong>Date de création </strong> : Février 2022 </li>
+                <li><strong>Contact </strong> : +226 70 03 84 14/ 51 11 09 09 </li>
+                <li><strong>Email </strong> : <a href="#">{{abouts.Email_Urbain}}</a></li>
+                <li><strong>Adresse </strong> : BV 30045 Ouaga KOSSYAM 10010 Ouaga</li>
+                <li><strong>Horaire </strong> : {{abouts.Horaire}}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+    <section id="about-video" class="about-video">
+
+      <header class="section-header">
+        <h2>{{abouts.text_domain}}</h2>
+        <p>{{abouts.sous_text_domaine}}</p>
+      </header>
+      
+      <div class="container" data-aos="fade-up">
+          <div class="content" data-aos="fade-left" data-aos-delay="100">
+            <h3>{{abouts.sous_text_domaine2}}</h3>
+            <p class="fst-italic">
+              {{abouts.sous_text_domaine3}}
+            </p>
+            
+              <ul>
+                {% for domaine in domaines %}
+                <li><i class="bi bi-check2-all"></i> {{ domaine.domaine }}</li>
+                {% endfor%}
+              </ul>  
+                   
+            <p>
+              {{abouts.sous_text_domaine4}}
+            </p>
+          </div>
+      </div>
+    </section>
+
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>{{abouts.text_partenaire}}</h2>
+        </header>
+
+        <div class="clients-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            {% for partenaire in partenaires %}
+            <div class="swiper-slide"><img src="{{ partenaire.image.url }}" class="img-fluid" alt=""></div>
+            {% endfor%}
+           
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+    </section><!-- End Clients Section -->
+
+    <!-- ======= Recent Blog Posts Section ======= -->
+    <!-- Section de blog récent 
+    <section id="recent-blog-posts" class="recent-blog-posts">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>{{abouts.text_blog}}</h2>
+          <p>{{abouts.sous_text_blog}}</p>
+        </header>
+
+        <div class="row">
+          {% for blog in blogs %}
+          <div class="col-lg-4">
+            <div class="post-box">
+                
+                <span class="post-date">{{blog.date}}</span>
+                <h3 class="post-title">{{blog.text}}</h3>
+                <a href="#" class="readmore stretched-link mt-auto"><span>En savoir plus</span><i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+          {% endfor%}
+        </div>
+
+      </div>
+
+    </section>
+End Recent Blog Posts Section -->
+  </main><!-- End #main -->
+
+  {% endblock content%}

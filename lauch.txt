@@ -1,0 +1,15 @@
+Pour lancer le projet
+
+--Avoir python intaller sur sa machine
+
+cd /chemin/vers/votre/projet   
+    # Etre sur le dossier parent du projet
+
+python3 -m venv [env]
+    # Installer un environnement virtuel env le nom de notre environnement virtuel peut etre changé
+
+source env/bin/activate
+    # Activer l'environnement virtuel (linux)
+
+pip install -r requirements.txt
+    # Installer les dépendances depuis le fichier requirements.txt

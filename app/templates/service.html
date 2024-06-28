@@ -1,0 +1,148 @@
+{% extends 'base.html' %}
+    {% load static%}
+    {% block service %}active{% endblock %}
+    {% block title %}Services{% endblock %}
+    
+{% block content %}
+
+<main id="main">
+    <!-- ======= Breadcrumbs ======= -->
+    <section class="breadcrumbs fixed-top">
+      <div class="container">
+
+        <ol>
+          <li><a href="{% url 'home' %}">{{services.title1}}</a></li>
+          <li>{{services.title2}}</li>
+        </ol>
+        <h2>{{services.title3}} </h2>
+
+      </div>
+    </section><!-- End Breadcrumbs style="background: url({{ section.image_service.url }}); -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+
+        <div class="container" data-aos="fade-up">
+
+          <header class="section-header">
+            <h2>{{services.text_service}}</h2>
+            <p>{{services.sous_text_service}}</p>
+          </header>
+  
+          <div class="row gy-4">
+            {% for offre in offres %}
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="service-box {{offre.color}}">
+                <i class="{{offre.icon}} icon"></i>
+                <h3>{{offre.title}}</h3>
+                <p>{{offre.text}}</p>
+                <a href="{% url 'detail_offre' offre.id %}" class="read-more"><span>En savoir plus</span> <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+            {% endfor %}
+            
+          
+        </div>
+  
+    </section><!-- End Services Section -->
+
+    <!-- ======= Alt Services Section ======= -->
+    <section id="alt-services" class="alt-services">
+
+        <div class="section-header">
+            <h2>{{services.text_equipe}}</h2>
+            <p>{{services.sous_text_equipe}}</p>
+        </div>
+
+        <div class="container" data-aos="fade-up">
+  
+            <div class="row justify-content-around gy-4">
+                <div class="col-lg-6 img-bg" style="background-image: url({{services.image.url}});" data-aos="zoom-in" data-aos-delay="100"></div>
+            
+                <div class="col-lg-5 d-flex flex-column justify-content-center">
+                    <h3>{{services.sous_text_equipe1}}</h3>
+                    <p>{{services.sous_text_equipe2}}</p>
+                    {% for poste in postes %}
+                    <div class="icon-box d-flex position-relative " data-aos="fade-up" data-aos-delay="100">
+                        <i class="{{poste.icon}} flex-shrink-0"></i>
+                        <div>
+                            <h4><a href="" class="stretched-link">{{poste.title}}</a></h4>
+                            <p>{{poste.text}}</p>
+                        </div>
+                    </div><!-- End Icon Box -->
+                    {% endfor %}
+                </div>
+            </div>
+            
+  
+        </div>
+    </section><!-- End Alt Services Section -->
+
+
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>{{services.text_part}}</h2>
+          <p>{{services.sous_text_parte}}</p>
+        </header>
+
+        <div class="clients-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            {% for partenaire in partenaires %}
+            <div class="swiper-slide"><img src="{{ partenaire.image.url }}" class="img-fluid" alt=""></div>
+            {% endfor%}
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+    </section><!-- End Clients Section -->
+  
+    <!-- ======= Our Projects Section ======= -->
+    <section id="projects" class="projects">
+        <div class="container" data-aos="fade-up">
+  
+          <div class="section-header">
+            <h2>{{services.text_projet}}</h2>
+            <p>{{services.sous_text_projet}}</p>
+          </div>
+  
+          <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry" data-portfolio-sort="original-order">
+  <!--
+            <ul class="portfolio-flters" data-aos="fade-up" data-aos-delay="100">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-remodeling">Remodeling</li>
+              <li data-filter=".filter-construction">Construction</li>
+              <li data-filter=".filter-repairs">Repairs</li>
+              <li data-filter=".filter-design">Design</li>
+            </ul> End Projects Filters -->
+  
+            <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
+              {% for projet in projets %}
+              <div class="col-lg-4 col-md-6 portfolio-item {{projet.js1}}">
+                <div class="portfolio-content h-100">
+                  <img src="{{projet.image.url}}" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <h4>{{projet.title}}</h4>
+                    <!-- <p>Lorem ipsum, dolor sit amet consectetur</p>-->
+                    <a href="{{projet.image.url}}" title="{{projet.title}}" data-gallery="{{projet.js2}}" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                    <a href="#" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  </div>
+                </div>
+              </div><!-- End Projects Item -->
+              {% endfor %}
+  
+            </div><!-- End Projects Container -->
+  
+          </div>
+  
+        </div>
+    </section>
+    
+<!-- End Recent Blog Posts Section -->
+  </main><!-- End #main -->
+    
+{% endblock content%}

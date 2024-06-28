@@ -1,0 +1,384 @@
+{% extends 'base.html' %}
+    {% load static%}
+    {% block home %}active{% endblock %} 
+{% block content %}
+
+    <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero d-flex align-items-center" style="background: url({{ section.image_home.url }}) top center no-repeat;">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center">
+          <h1 data-aos="fade-up">{{ accueil.slogan }}</h1>
+          <h2 data-aos="fade-up" data-aos-delay="400">{{ accueil.sous_slogan }}</h2>
+          <div data-aos="fade-up" data-aos-delay="600">
+            <div class="text-center text-lg-start">
+              <a href="#constructions" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                <span>{{ accueil.Bouton_page1 }}</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
+          <img src="{{ accueil.image_1_accueil.url }}" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= Presentation Section ======= -->
+    <section id="constructions" class="constructions">
+        <div class="container" data-aos="fade-up">
+  
+          <div class="section-header">
+            <h2>{{ accueil.text_presentation }}</h2>
+            <p>{{ accueil.sous_text_presentation }}</p>
+          </div>
+  
+          <div class="row gy-4">
+            {% for presentation in presentations%}
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="card-item">
+                <div class="row">
+                  <div class="col-xl-5">
+                    <div class="card-bg" style="background-image: url({{ presentation.image.url }});"></div>
+                  </div>
+                  <div class="col-xl-7 d-flex align-items-center">
+                    <div class="card-body">
+                      <h4 class="card-title">
+                        {{ presentation.title_presentation}}</h4>
+                      <p>{{ presentation.text_presentation}}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Card Item -->
+            {% endfor%}
+            
+  
+          </div>
+  
+        </div>
+      </section><!-- End Presentation Section -->
+
+    <!-- ======= Values Section ======= -->
+    <section id="values" class="values">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Nos valeurs</h2>
+          <p>Ils imposent de mettre au coeur la statistique et la géomatique.</p>
+        </header>
+
+        <div class="row">
+        {% for valeur in valeurs%}
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="box">
+              <img src="{{ valeur.image.url }}" class="img-fluid" alt="">
+              <h3>{{ valeur.title_valeur }}</h3>
+              <p>{{ valeur.text_valeur }}</p>
+            </div>
+          </div>
+        {% endfor%}
+
+        </div>
+
+      </div>
+
+    </section>
+<!-- End Values Section -->
+
+    <!-- ======= Counts Section ======= 
+    <section id="counts" class="counts">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="count-box">
+              <i class="bi bi-emoji-smile"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="1000" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Résidents Satisfaits</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="count-box">
+              <i class="bi bi-journal-richtext" style="color: #ee6c20;"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="350" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Projets Réalisés</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="count-box">
+              <i class="bi bi-headset" style="color: #15be56;"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="3000" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Heures de Support</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="count-box">
+              <i class="bi bi-people" style="color: #bb0852;"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="50" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Collaborateurs Impliqués</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+End Counts Section -->
+
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="features">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Carasteristiques</h2>
+          <p>{{ accueil.sous_text_carasteristique1 }}</p>
+        </header>
+
+        <div class="row">
+
+          <div class="col-lg-6">
+            <img src="{{ accueil.image1.url }}" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-6 mt-5 mt-lg-0 d-flex">
+            <div class="row align-self-center gy-4">
+
+            {% for carasteristique1 in carasteristique1s %}
+              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="200">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>{{ carasteristique1.text_domaine }}</h3>
+                </div>
+              </div>
+            {% endfor%}
+              
+            </div>
+          </div>
+
+        </div>
+         <!-- / row -->
+
+        <!-- Feature Tabs -->
+        <div class="row feture-tabs" data-aos="fade-up">
+          <div class="col-lg-6">
+            <h3>{{ accueil.sous_text_carasteristique2 }}</h3>
+            
+            <!-- Onglets -->
+            <ul class="nav nav-pills mb-3">
+              <li>
+                <a class="nav-link active" data-bs-toggle="pill" href="#tab1">{{ accueil.title_carasteristique2_1}}</a>
+              </li>
+              <li>
+                <a class="nav-link" data-bs-toggle="pill" href="#tab2">{{ accueil.title_carasteristique2_2}}</a>
+              </li>
+              <li>
+                <a class="nav-link" data-bs-toggle="pill" href="#tab3">{{ accueil.title_carasteristique2_3}}</a>
+              </li>
+            </ul><!-- Fin des onglets -->
+            
+            <!-- Contenu des onglets -->
+            <div class="tab-content">
+        
+              <div class="tab-pane fade show active" id="tab1">
+                <p>{{ carasteristique2.sout_text1}}</p>
+                <div class="d-flex align-items-center mb-2">
+                  <i class="bi bi-check2"></i>
+                  <h4>{{ carasteristique2.sous_titre1_1}}</h4>
+                </div>
+                <p>{{ carasteristique2.sous_text1_1}}</p>
+                <div class="d-flex align-items-center mb-2">
+                  <i class="bi bi-check2"></i>
+                  <h4>{{ carasteristique2.sous_titre1_2}}</h4>
+                </div>
+                <p>{{ carasteristique2.sous_text1_2}}</p>
+                <div class="d-flex align-items-center mb-2">
+                  <i class="bi bi-check2"></i>
+                  <h4>{{ carasteristique2.sous_titre1_3}}</h4>
+                </div>
+                <p>{{ carasteristique2.sous_text1_3}}</p>
+              </div><!-- Fin du contenu de l'onglet 1 -->
+        
+              <div class="tab-pane fade" id="tab2">
+                <p>{{ carasteristique2.sout_text2}}</p>
+                <div class="d-flex align-items-center mb-2">
+                    <i class="bi bi-check2"></i>
+                    <h4>{{ carasteristique2.sous_titre2_2}}</h4>
+                </div>
+                <p>{{ carasteristique2.sous_text2_1}}</p>
+                <div class="d-flex align-items-center mb-2">
+                    <i class="bi bi-check2"></i>
+                    <h4>{{ carasteristique2.sous_titre2_2}}</h4>
+                </div>
+                <p>{{ carasteristique2.sous_text2_2}}</p>
+                <div class="d-flex align-items-center mb-2">
+                    <i class="bi bi-check2"></i>
+                    <h4>{{ carasteristique2.sous_titre2_3}}</h4>
+                </div>
+                <p>{{ carasteristique2.sous_text2_3}}</p>
+              </div>
+            <!-- Fin du contenu de l'onglet 2 -->
+        
+            <div class="tab-pane fade" id="tab3">
+              <p>{{ carasteristique2.sout_text3}}</p>
+              <div class="d-flex align-items-center mb-2">
+                  <i class="bi bi-check2"></i>
+                  <h4>{{ carasteristique2.sous_titre3_1}}</h4>
+              </div>
+              <p>{{ carasteristique2.sous_text1_3}}</p>
+              <div class="d-flex align-items-center mb-2">
+                  <i class="bi bi-check2"></i>
+                  <h4>{{ carasteristique2.sous_titre3_2}}</h4>
+              </div>
+              <p>{{ carasteristique2.sous_text3_2}}</p>
+              <div class="d-flex align-items-center mb-2">
+                  <i class="bi bi-check2"></i>
+                  <h4>{{ carasteristique2.sous_titre3_3}}</h4>
+              </div>
+              <p>{{ carasteristique2.sous_text3_3}}</p>
+            </div>
+          <!-- Fin du contenu de l'onglet 3 -->
+        
+            </div>
+          </div>
+        
+          <div class="col-lg-6">
+            <img src="{{ accueil.image2.url }}" class="img-fluid" alt="">
+          </div>
+        </div>
+        <!-- End Feature Tabs -->
+
+        <!-- Feature Icons -->
+        <div class="row feature-icons" data-aos="fade-up">
+          <h3>{{ accueil.sous_text_carasteristique3 }}</h3>
+      
+          <div class="row">
+      
+            <div class="col-xl-4 text-center" data-aos="fade-right" data-aos-delay="100">
+              <img src="{{ accueil.image3.url }}" class="img-fluid p-4" alt="">
+            </div>
+      
+            <div class="col-xl-8 d-flex content">
+              <div class="row align-self-center gy-4">
+                
+              {% for carasteristique3 in carasteristique3s %}
+                <div class="col-md-6 icon-box" data-aos="fade-up">
+                  <i class="{{ carasteristique3.icon }}"></i>
+                  <div>
+                    <h4>{{ carasteristique3.titre }}</h4>
+                    <p>{{ carasteristique3.text }}</p>
+                  </div>
+                </div>
+              {% endfor%}
+      
+              </div>
+            </div>
+      
+          </div>
+      
+        </div><!-- Fin des icones de fonctionnalités -->
+      
+      </section>
+      <!-- End Features Section -->
+
+
+    <!-- ======= F.A.Q Section ======= -->
+    <section id="faq" class="faq">
+      
+      <div class="container" data-aos="fade-up">
+        <header class="section-header">
+          <h2>{{ accueil.text_question }}</h2>
+          <p>{{ accueil.sous_text_question }}</p>
+        </header>
+
+        <div class="row">
+          <div class="container">
+            <!-- F.A.Q List 1 -->
+            <div class="accordion accordion-flush" id="faqlist1">
+              {% for question in questions %}
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#{{ question.js2 }}">
+                    {{ question.titre }}
+                  </button>
+                </h2>
+                <div id="{{ question.js2 }}" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                  <div class="accordion-body">
+                    {{ question.text }}
+                  </div>
+                </div>
+              </div>
+              {% endfor%}
+            </div>
+          </div>
+          
+
+        </div>
+      </div>
+
+    </section><!-- End F.A.Q Section -->
+
+
+
+    <!-- ======= Testimonials Section ======= 
+    <section id="testimonials" class="testimonials">
+      
+      <div class="container" data-aos="fade-up">
+        <header class="section-header">
+          <h2>{{ accueil.text_temstimonail }}</h2>
+          <p>{{ accueil.sous_text_testimonail }}</p>
+        </header>
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="200">
+          <div class="swiper-wrapper">
+          {% for temoin in temoins %}
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                    {{ temoin.text }}
+                </p>
+                <div class="profile mt-auto">
+                  <img src="{% static 'img/person.jpg'%}" class="testimonial-img" alt="">
+                  <h3>{{ temoin.person_name }}</h3>
+                  <h4>{{temoin.person_poste }}</h4>
+                </div>
+              </div>
+            </div>
+            {% endfor%}
+        
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        
+
+      </div>
+
+    </section> End Testimonials Section -->
+
+
+  </main><!-- End #main -->
+
+{% endblock content%}

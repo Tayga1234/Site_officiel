@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+{% load static%}
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Urbain_Plus - Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'vendor/aos/aos.css'%}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css'%}" rel="stylesheet">
+  <link href="{% static 'vendor/glightbox/css/glightbox.min.css'%}" rel="stylesheet">
+  <link href="{% static 'vendor/remixicon/remixicon.css'%}" rel="stylesheet">
+  <link href="{% static 'vendor/swiper/swiper-bundle.min.css'%}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'css/style.css'%}" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="{% static 'img/logo_2.svg'%}" alt="">
+        <span>Urbain+</span>
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown megamenu"><a href="#"><span>Menu</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li>
+                <a href="#">Column 1 link 1</a>
+                <a href="#">Column 1 link 2</a>
+                <a href="#">Column 1 link 3</a>
+              </li>
+              <li>
+                <a href="#">Column 2 link 1</a>
+                <a href="#">Column 2 link 2</a>
+                <a href="#">Column 3 link 3</a>
+              </li>
+              <li>
+                <a href="#">Column 3 link 1</a>
+                <a href="#">Column 3 link 2</a>
+                <a href="#">Column 3 link 3</a>
+              </li>
+              <li>
+                <a href="#">Column 4 link 1</a>
+                <a href="#">Column 4 link 2</a>
+                <a href="#">Column 4 link 3</a>
+              </li>
+            </ul>
+          </li>
+
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <!--<li><a class="getstarted scrollto" href="#about">Get Started</a></li> -->
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center">
+          <h1 data-aos="fade-up">Nous proposons des solutions modernes pour le develeppement</h1>
+          <h2 data-aos="fade-up" data-aos-delay="400">Nous disposons d'une équipe complete et adaptée aux besoins</h2>
+          <div data-aos="fade-up" data-aos-delay="600">
+            <div class="text-center text-lg-start">
+              <a href="#about" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                <span>Visitez!</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
+          <img src="{% static 'img/7.jpg'%}" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+
+      <div class="container" data-aos="fade-up">
+        <div class="row gx-0">
+
+          <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="content">
+              <h3>À propos de nous</h3>
+              <h2>Améliorer l'urbanisme pour un monde plus durable.</h2>
+              <p>
+                URBAIN+ offre des services d'optimisation et de pilotage de la mobilité pour les Autorités Organisatrices des Mobilités, les transporteurs et les entreprises. Ils accompagnent dans la création, le déploiement et la gestion des services de mobilité pour améliorer la vie citoyenne et locale. Travaillant en missions directes ou en sous-traitance, ils garantissent la confidentialité et la discrétion totale en respectant les références et mandats de leurs clients.
+              </p>
+              <div class="text-center text-lg-start">
+                <a href="{% url 'about' %}" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
+                  <span>En savoir plus</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
+            <img src="{% static 'img/team.jpg'%}" class="img-fluid" alt="">
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- End About Section -->
+
+    <!-- ======= Values Section ======= -->
+    <section id="values" class="values">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Nos valeurs</h2>
+          <p>Ils imposent de mettre au coeur la statistique et la géomatique.</p>
+        </header>
+
+        <div class="row">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="box">
+              <img src="{% static 'img/1.jpg'%}" class="img-fluid" alt="">
+              <h3>La rigueur</h3>
+              <p>La rigueur dans le travail se manifeste par une discipline sans faille, une attention minutieuse aux détails et un engagement constant envers l'excellence. </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="400">
+            <div class="box">
+              <img src="{% static 'img/4.jpg'%}" class="img-fluid" alt="">
+              <h3>La collaboration efficace</h3>
+              <p>La collaboration efficace est un pilier essentiel de la culture d'entreprise, favorisant la synergie des talents, la résolution créative de problèmes et l'atteinte collective des objectifs stratégiques.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="600">
+            <div class="box">
+              <img src="{% static 'img/2.jpg'%}" class="img-fluid" alt="">
+              <h3>l’objectivité sientifiques</h3>
+              <p>L'objectivité scientifique repose sur une rigueur méthodologique inébranlable, une analyse critique sans biais et une quête incessante de vérité.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+<!-- End Values Section -->
+
+    <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="count-box">
+              <i class="bi bi-emoji-smile"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="1000" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Résidents Satisfaits</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="count-box">
+              <i class="bi bi-journal-richtext" style="color: #ee6c20;"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="350" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Projets Réalisés</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="count-box">
+              <i class="bi bi-headset" style="color: #15be56;"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="3000" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Heures de Support</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="count-box">
+              <i class="bi bi-people" style="color: #bb0852;"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="50" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Collaborateurs Impliqués</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+<!-- End Counts Section -->
+
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="features">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Carasteristiques</h2>
+          <p>Nos domaines d'intervention couvrent une gamme variée de services.</p>
+        </header>
+
+        <div class="row">
+
+          <div class="col-lg-6">
+            <img src="{% static 'img/features.png'%}" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-6 mt-5 mt-lg-0 d-flex">
+            <div class="row align-self-center gy-4">
+
+              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="200">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>Ingénierie des déplacements</h3>
+                </div>
+              </div>
+
+              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="400">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>Sécurité routière</h3>
+                </div>
+              </div>
+
+              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="500">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>Modélisation et simulation des déplacements</h3>
+                </div>
+              </div>
+
+              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="600">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>Production et gestion des données de mobilités et de transports</h3>
+                </div>
+              </div>
+
+
+              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="700">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>Signalisation et signalétique routière</h3>
+                </div>
+              </div>
+
+              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="700">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>Economie des transports</h3>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+         <!-- / row -->
+
+        <!-- Feature Tabs -->
+        <div class="row feture-tabs" data-aos="fade-up">
+          <div class="col-lg-6">
+            <h3>Chez nous à URBAIN+, nous donnons corps par 3 principaux aspects.</h3>
+        
+            <!-- Onglets -->
+            <ul class="nav nav-pills mb-3">
+              <li>
+                <a class="nav-link active" data-bs-toggle="pill" href="#tab1">Les experts</a>
+              </li>
+              <li>
+                <a class="nav-link" data-bs-toggle="pill" href="#tab2">La pluridisciplinarité</a>
+              </li>
+              <li>
+                <a class="nav-link" data-bs-toggle="pill" href="#tab3">La transdisciplinarité</a>
+              </li>
+            </ul><!-- Fin des onglets -->
+        
+            <!-- Contenu des onglets -->
+            <div class="tab-content">
+        
+              <div class="tab-pane fade show active" id="tab1">
+                <p>Nos consultants en mobilité accompagnent vos réflexions stratégiques et vos projets opérationnels au quotidien. Il s’agit entre autres de :</p>
+                <div class="d-flex align-items-center mb-2">
+                  <i class="bi bi-check2"></i>
+                  <h4>Des experts métiers appliqués à la mobilité dans les domaines de...</h4>
+                </div>
+                <p>marketing, architecture, urbanisme, cartographie, géomatique, systèmes de transport intelligents, management QHSE et en droit.</p>
+                <div class="d-flex align-items-center mb-2">
+                  <i class="bi bi-check2"></i>
+                  <h4>Des data scientists et des analysts</h4>
+                </div>
+                <p>Pour qui la connaissance de la donnée transport et sa valorisation n’ont aucun secret.</p>
+                <div class="d-flex align-items-center mb-2">
+                  <i class="bi bi-check2"></i>
+                  <h4>Des facilitateurs et des animateurs</h4>
+                </div>
+                <p> Qui allient neutralité, expertise et techniques créatives pour renforcer la participation et l’adhésion de vos équipes dans les projets.</p>
+              </div><!-- Fin du contenu de l'onglet 1 -->
+        
+              <div class="tab-pane fade" id="tab2">
+                <p>Dans un monde en constante évolution, nous croyons en la force de la pluridisciplinarité pour aborder les défis complexes de la mobilité urbaine. Nos équipes réunissent une diversité de compétences et de perspectives, notamment :</p>
+                <div class="d-flex align-items-center mb-2">
+                    <i class="bi bi-check2"></i>
+                    <h4>Des urbanistes et architectes</h4>
+                </div>
+                <p>Experts dans la conception d'espaces urbains innovants et fonctionnels, intégrant les dernières avancées en matière de mobilité durable.</p>
+                <div class="d-flex align-items-center mb-2">
+                    <i class="bi bi-check2"></i>
+                    <h4>Des spécialistes en géomatique et cartographie</h4>
+                </div>
+                <p>Maîtrisant les outils et les méthodes pour cartographier et analyser les flux de déplacement, facilitant ainsi la planification stratégique des infrastructures.</p>
+                <div class="d-flex align-items-center mb-2">
+                    <i class="bi bi-check2"></i>
+                    <h4>Des ingénieurs en systèmes de transport intelligents</h4>
+                </div>
+                <p>Apportant leur expertise dans le développement de solutions technologiques avancées pour améliorer l'efficacité et la sécurité des réseaux de transport.</p>
+              </div>
+            <!-- Fin du contenu de l'onglet 2 -->
+        
+            <div class="tab-pane fade" id="tab3">
+              <p>Nous croyons fermement que les défis de la mobilité urbaine nécessitent une approche transdisciplinaire, intégrant différentes perspectives et connaissances. Notre approche repose sur :</p>
+              <div class="d-flex align-items-center mb-2">
+                  <i class="bi bi-check2"></i>
+                  <h4>La convergence des savoirs</h4>
+              </div>
+              <p>En rassemblant des experts issus de domaines variés, nous favorisons l'émergence de solutions novatrices et adaptées aux besoins complexes de la mobilité urbaine.</p>
+              <div class="d-flex align-items-center mb-2">
+                  <i class="bi bi-check2"></i>
+                  <h4>Le dialogue interdisciplinaire</h4>
+              </div>
+              <p>Nos équipes encouragent une communication ouverte et collaborative entre les différents acteurs impliqués, favorisant ainsi la création d'une vision globale et intégrée.</p>
+              <div class="d-flex align-items-center mb-2">
+                  <i class="bi bi-check2"></i>
+                  <h4>L'innovation transformatrice</h4>
+              </div>
+              <p>En combinant expertise métier, technologique et sociétale, nous sommes en mesure de proposer des solutions qui transcendent les frontières traditionnelles et contribuent à façonner l'avenir de la mobilité urbaine.</p>
+            </div>
+          <!-- Fin du contenu de l'onglet 3 -->
+        
+            </div>
+          </div>
+        
+          <div class="col-lg-6">
+            <img src="{% static 'img/features-2.png'%}" class="img-fluid" alt="">
+          </div>
+        </div>
+        <!-- End Feature Tabs -->
+
+        <!-- Feature Icons -->
+        <div class="row feature-icons" data-aos="fade-up">
+          <h3>Les avantages de l'urbanisme connecté</h3>
+      
+          <div class="row">
+      
+            <div class="col-xl-4 text-center" data-aos="fade-right" data-aos-delay="100">
+              <img src="{% static 'img/features-3.png'%}" class="img-fluid p-4" alt="">
+            </div>
+      
+            <div class="col-xl-8 d-flex content">
+              <div class="row align-self-center gy-4">
+      
+                <div class="col-md-6 icon-box" data-aos="fade-up">
+                  <i class="ri-line-chart-line"></i>
+                  <div>
+                    <h4>Amélioration de la qualité de vie</h4>
+                    <p>L'urbanisme connecté vise à améliorer la qualité de vie en favorisant des environnements urbains plus agréables et durables.</p>
+                  </div>
+                </div>
+      
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+                  <i class="ri-stack-line"></i>
+                  <div>
+                    <h4>Efficacité énergétique</h4>
+                    <p>Les technologies de l'urbanisme connecté permettent d'optimiser l'utilisation des ressources énergétiques, contribuant ainsi à la réduction de la consommation.</p>
+                  </div>
+                </div>
+      
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+                  <i class="ri-brush-4-line"></i>
+                  <div>
+                    <h4>Développement durable</h4>
+                    <p>En intégrant des solutions durables dans la planification urbaine, l'urbanisme connecté favorise le développement durable des villes.</p>
+                  </div>
+                </div>
+      
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+                  <i class="ri-magic-line"></i>
+                  <div>
+                    <h4>Respect de l'environnement</h4>
+                    <p>L'urbanisme connecté permet de réduire l'empreinte écologique des villes en favorisant une gestion plus efficace des ressources.</p>
+                  </div>
+                </div>
+      
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+                  <i class="ri-command-line"></i>
+                  <div>
+                    <h4>Économies de coûts</h4>
+                    <p>Grâce à une utilisation plus efficace des ressources, l'urbanisme connecté peut aider à réaliser des économies financières significatives.</p>
+                  </div>
+                </div>
+      
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
+                  <i class="ri-radar-line"></i>
+                  <div>
+                    <h4>Urbanisme inclusif</h4>
+                    <p>L'urbanisme connecté vise à créer des environnements urbains inclusifs et accessibles à tous les habitants.</p>
+                  </div>
+                </div>
+      
+              </div>
+            </div>
+      
+          </div>
+      
+        </div><!-- Fin des icones de fonctionnalités -->
+      
+      </section>
+      <!-- End Features Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Nos Offres</h2>
+          <p>Optimisez votre environnement urbain avec nos solutions d'urbanisme.</p>
+        </header>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-box blue">
+              <i class="ri-route-fill icon"></i>
+              <h3>Transports et Mobilité Urbaine</h3>
+              <p>Nous proposons une expertise complète en mobilité urbaine, couvrant l'analyse du trafic, la gestion du stationnement, l'optimisation des feux tricolores et des plans de circulation. Notre approche inclut également des enquêtes voyageurs pour améliorer l'expérience client et des analyses de données pour développer des stratégies innovantes.</p>
+              <a href="#" class="read-more"><span>Lire plus</span> <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-box orange">
+              <i class="ri-bar-chart-line icon"></i>
+              <h3>Ingeniérie Statistique et Data intelligence</h3>
+              <p>
+                URBAIN+ propose une expertise en ingénierie statistique et en intelligence des données, spécialisée en géomatique. Nous développons des solutions SIG pour les collectivités territoriales et les professionnels, couvrant l'administration foncière, l'aménagement du territoire et la gestion de réseaux, en partenariat avec d'autres bureaux d'études.</p>
+              <a href="#" class="read-more"><span>Lire plus</span> <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-box green">
+              <i class="ri-graduation-cap-line icon"></i>
+              <h3>Formation et partage du savoir</h3>
+              <p>
+                URBAIN+ partage son expertise dans les transports et la mobilité à travers des interventions, des conférences, des formations et des débats. Nous offrons également des opportunités d'encadrement de stages et des visites de terrain. Nos formations abordent des sujets variés tels que l'innovation dans les transports et la gestion des services urbains.</p>
+              <a href="#" class="read-more"><span>Lire plus</span> <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        
+        </div>
+        
+
+    </section><!-- End Services Section -->
+
+    
+
+    <!-- ======= F.A.Q Section ======= -->
+    <section id="faq" class="faq">
+      
+      <div class="container" data-aos="fade-up">
+        <header class="section-header">
+          <h2>Foire Aux Questions (FAQ)</h2>
+          <p>Vous avez des questions? Vous trouverez sûrement la réponse ici.</p>
+        </header>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <!-- F.A.Q List 1 -->
+            <div class="accordion accordion-flush" id="faqlist1">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
+                    Quelles sont les solutions que vous proposez dans le domaine de l'urbanisme connecté?
+                  </button>
+                </h2>
+                <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                  <div class="accordion-body">
+                    Nous proposons une variété de solutions pour rendre les villes plus intelligentes et connectées. Cela inclut des systèmes de gestion du trafic, des solutions de stationnement intelligent, des réseaux de capteurs pour surveiller l'air et l'eau, des solutions de gestion des déchets, et bien plus encore. Contactez-nous pour discuter de vos besoins spécifiques.
+                  </div>
+                </div>
+              </div>
+        
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
+                    Quels sont les avantages de l'urbanisme connecté?
+                  </button>
+                </h2>
+                <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                  <div class="accordion-body">
+                    L'urbanisme connecté offre de nombreux avantages, notamment une meilleure gestion des ressources, une réduction des temps de trajet, une diminution de la pollution, une meilleure sécurité, et une qualité de vie améliorée pour les citoyens. Ces solutions peuvent également aider les villes à devenir plus résilientes face aux défis environnementaux et sociaux.
+                  </div>
+                </div>
+              </div>
+        
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3">
+                    Comment votre solution peut-elle aider à réduire la congestion routière?
+                  </button>
+                </h2>
+                <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                  <div class="accordion-body">
+                    Notre solution de gestion du trafic utilise des algorithmes avancés et des données en temps réel pour optimiser les flux de circulation, détecter les embouteillages potentiels, et proposer des itinéraires alternatifs. Cela permet de réduire la congestion routière, d'optimiser les temps de trajet, et de minimiser les émissions de gaz à effet de serre.
+                  </div>
+                </div>
+              </div>
+        
+            </div>
+          </div>
+        
+          <div class="col-lg-6">
+            <!-- F.A.Q List 2 -->
+            <div class="accordion accordion-flush" id="faqlist2">
+        
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-1">
+                    Comment vos solutions peuvent-elles aider à améliorer la sécurité dans les villes?
+                  </button>
+                </h2>
+                <div id="faq2-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
+                  <div class="accordion-body">
+                    Nous proposons des solutions de sécurité urbaine qui utilisent des caméras intelligentes, des capteurs, et des algorithmes d'analyse vidéo pour surveiller les zones sensibles, détecter les comportements suspects, et alerter les autorités en cas d'incident. Cela permet de réduire la criminalité, d'améliorer la réactivité des services d'urgence, et de renforcer le sentiment de sécurité dans les villes.
+                  </div>
+                </div>
+              </div>
+        
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-2">
+                    Pouvez-vous personnaliser vos solutions en fonction de nos besoins spécifiques?
+                  </button>
+                </h2>
+                <div id="faq2-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
+                  <div class="accordion-body">
+                    Oui, nos solutions peuvent être personnalisées en fonction de vos besoins spécifiques. Nous travaillons en étroite collaboration avec nos clients pour comprendre leurs défis uniques et développer des solutions sur mesure qui répondent à leurs exigences particulières. Notre équipe d'experts en urbanisme connecté est là pour vous aider à réaliser votre vision.
+                  </div>
+                </div>
+              </div>
+        
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-3">
+                    Comment puis-je obtenir plus d'informations sur vos solutions et discuter de mes besoins?
+                  </button>
+                </h2>
+                <div id="faq2-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
+                  <div class="accordion-body">
+                    Pour obtenir plus d'informations sur nos solutions, discuter de vos besoins spécifiques, ou demander une démonstration, vous pouvez nous contacter par téléphone, par e-mail, ou via notre site web. Nous serions ravis de vous aider à explorer les possibilités de l'urbanisme connecté et à trouver des solutions qui répondent à vos besoins.
+                  </div>
+                </div>
+              </div>
+        
+            </div>
+          </div>
+        </div>
+        
+
+      </div>
+
+    </section><!-- End F.A.Q Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials">
+      
+      <div class="container" data-aos="fade-up">
+        <header class="section-header">
+          <h2>Témoignages</h2>
+          <p>Quelques témoignages ont été recueillis de nos clients.</p>
+        </header>
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="200">
+          <div class="swiper-wrapper">
+        
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Grâce à URBAIN+, nous avons pu identifier les points critiques de notre réseau routier et mettre en place des solutions efficaces pour améliorer la sécurité des usagers. Leurs analyses approfondies et leurs recommandations nous ont été d'une grande aide.
+                </p>
+                <div class="profile mt-auto">
+                  <img src="{% static 'img/person.jpg'%}" class="testimonial-img" alt="">
+                  <h3>Nathalie KABORE</h3>
+                  <h4>Directrice des Services Techniques</h4>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+        
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  URBAIN+ nous a accompagnés dans la conception et la mise en œuvre de notre plan de modération de la vitesse. Leurs compétences en ingénierie routière et leur expertise en sécurité ont été cruciales pour la réussite de notre projet.
+                </p>
+                <div class="profile mt-auto">
+                  <img src="{% static 'img/person.jpg'%}" class="testimonial-img" alt="">
+                  <h3>Philippe Martin</h3>
+                  <h4>Maire de la Ville</h4>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+        
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Les diagnostics sécurité linéaires réalisés par URBAIN+ ont été essentiels pour identifier les zones à risque sur notre réseau routier. Leurs recommandations nous ont permis de mettre en œuvre des mesures de sécurité efficaces pour protéger les usagers.
+                </p>
+                <div class="profile mt-auto">
+                  <img src="{% static 'img/person.jpg'%}" class="testimonial-img" alt="">
+                  <h3>Jean-Luc BAMBARA</h3>
+                  <h4>Responsable de la Sécurité Routière</h4>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+        
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Les expertises et audits de voiries réalisés par URBAIN+ ont été extrêmement précieux pour notre projet d'aménagement urbain. Leurs recommandations nous ont permis de concevoir des infrastructures routières plus sûres et mieux adaptées aux besoins de notre communauté.
+                </p>
+                <div class="profile mt-auto">
+                  <img src="{% static 'img/person.jpg'%}" class="testimonial-img" alt="">
+                  <h3>Sophie TOE</h3>
+                  <h4>Architecte Urbaniste</h4>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+        
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Nous avons fait appel à URBAIN+ pour réaliser des études d'enjeux accidents dans notre ville. Leur expertise nous a permis de mieux comprendre les causes des accidents et de mettre en place des mesures préventives efficaces pour réduire les risques sur nos routes.
+                </p>
+                <div class="profile mt-auto">
+                  <img src="{% static 'img/person.jpg'%}" class="testimonial-img" alt="">
+                  <h3>Élise OUEDRAOGO</h3>
+                  <h4>Directrice de la Voirie Municipale</h4>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+        
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        
+
+      </div>
+
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team">
+      
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Équipe</h2>
+          <p>Notre équipe travaille dure</p>
+        </header>
+    
+        <div class="row gy-4">
+    
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <div class="member-img">
+                <img src="{% static 'img/team_person.jpg'%}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Walter White</h4>
+                <span>PDG</span>
+                <p>Notre PDG, possède une expérience significative en gestion d'entreprise. Il est responsable de la stratégie globale de l'entreprise.</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <div class="member-img">
+                <img src="{% static 'img/team_person.jpg'%}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Sarah Jhonson</h4>
+                <span>Directrice de produit</span>
+                <p>Avec sa passion pour l'innovation, elle est en charge du développement de produits et de la planification de la gamme.</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="member">
+              <div class="member-img">
+                <img src="{% static 'img/team_person.jpg'%}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>William Anderson</h4>
+                <span>Directeur technique</span>
+                <p> Notre DT, est le génie créatif derrière notre technologie. Il dirige notre équipe technique et veille à la mise en œuvre de solutions innovantes.</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+            <div class="member">
+              <div class="member-img">
+                <img src="{% static 'img/team_person.jpg'%}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Amanda Jepson</h4>
+                <span>Comptable</span>
+                <p>Elle est chargée de la comptabilité, de la budgétisation et des finances en général.</p>
+              </div>
+            </div>
+          </div>
+    
+        </div>
+    
+      </div>
+    
+    </section>
+    <!-- End Team Section -->
+
+    <!-- ======= Clients Section ======= -->
+    <!-- End Clients Section -->
+
+    <!-- ======= Recent Blog Posts Section ======= -->
+
+    <!-- Section de blog récent -->
+    <!-- End Recent Blog Posts Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Contact</h2>
+          <p>Contact Us</p>
+        </header>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6">
+
+            <div class="row gy-4">
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bi bi-geo-alt"></i>
+                  <h3>Address</h3>
+                  <p>Kaapala,<br>Ouaga, Burkina Faso</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bi bi-telephone"></i>
+                  <h3>Contact</h3>
+                  <p>+226 00 00  00  00<br>+226 11 11 11 11
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bi bi-envelope"></i>
+                  <h3>Email </h3>
+                  <p>urbainU@example.com<br>contact@example.com</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bi bi-clock"></i>
+                  <h3>Open Hours</h3>
+                  <p>Lundi - vendredi<br>8:00AM - 05:00PM</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6">
+            <form action="forms/contact.php" method="post" class="php-email-form">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Nom" required>
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="email" class="form-control" name="email" placeholder="Email" required>
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Sujet" required>
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-12 text-center">
+            <h4>Our Newsletter</h4>
+            <p>Vous puvez nous envoyer votre e-mail et ne pas rater une notification</p>
+          </div>
+          <div class="col-lg-6">
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-5 col-md-12 footer-info">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <img src="{% static 'img/logo_2.svg'%}" alt="">
+              <span>Urbain+</span>
+            </a>
+            <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Web Development</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+            <h4>Contact Us</h4>
+            <p>
+              Kaarpala <br>
+             Ouagadougou<br>
+              Burkina Faso<br><br>
+              <strong>Phone:</strong> +226 00 00 00 00<br>
+              <strong>Email:</strong> urbain@example.com<br>
+            </p>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>UrbainPlus</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        
+        Designed by <a href="#">Urbain_Plus</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+
+</html>

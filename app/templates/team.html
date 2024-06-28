@@ -1,0 +1,229 @@
+{% extends 'base.html' %}
+    {% load static%}
+    {% block team %}active{% endblock %}
+    {% block title %}Equipe{% endblock %}
+{% block content %}
+<main id="main">
+    <!-- ======= Breadcrumbs ======= -->
+    <section class="breadcrumbs fixed-top">
+      <div class="container">
+
+        <ol>
+          <li><a href="{% url 'home' %}">{{teams.title1}}</a></li>
+          <li>{{teams.title2}}</li>
+        </ol>
+        <h2>{{teams.title3}} </h2>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <section id="heroT" class="d-flex align-items-center">
+      
+        <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+          
+          <header class="section-header">
+            <h2>{{teams.text_team}}</h2>
+            <p>{{teams.sous_text_team}}</p>
+          </header>
+
+          <div class="row icon-boxes">
+            {% for poste in postes %}
+            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="{{poste.display}}">
+                <div class="icon-box">
+                    <div class="icon"><i class="{{poste.icon}}"></i></div>
+                    <h4 class="title"><a href="">{{poste.title}}</a></h4>
+                    <p class="description">{{poste.text}}</p>
+                </div>
+            </div>
+            {% endfor%}
+        
+        </div>
+        
+        </div>
+    </section>
+
+    <section id="features" class="features">
+
+        <div class="container" data-aos="fade-up">
+  
+          <header class="section-header">
+            <h2>{{teams.text_meth}}</h2>
+            <p>{{teams.sous_text_meth}}</p>
+          </header> 
+  
+          <!-- Feature Tabs -->
+          <div class="row feture-tabs" data-aos="fade-up">
+            <div class="col-lg-6 meth">
+              <h3>{{m1.title}}</h3>
+          
+              <!-- Contenu des onglets -->
+              <div class="tab-content">
+          
+                <div class="tab-pane fade show active" id="tab1">
+                  <p>{{m1.text}}</p>
+                  <div class="d-flex align-items-center mb-2">
+                    <i class="bi bi-check2"></i>
+                    <h4>{{m1.meth_1}}</h4>
+                  </div>
+                  <p>{{m1.text_meth_1}}</p>
+                  <div class="d-flex align-items-center mb-2">
+                      <i class="bi bi-check2"></i>
+                      <h4>{{m1.meth_2}}</h4>
+                  </div>
+                  <p>{{m1.text_meth_2}}</p>
+                  <div class="d-flex align-items-center mb-2">
+                      <i class="bi bi-check2"></i>
+                      <h4>{{m1.meth_3}}</h4>
+                  </div>
+                  <p>{{m1.text_meth_3}}</p>
+              </div><!-- Fin du contenu de l'onglet 1 -->
+          
+              </div>
+            </div>
+          
+            <div class="col-lg-6">
+              <img src="{{m1.image.url}}" class="img-fluid" alt="">
+            </div>
+        </div>
+          <!-- End Feature Tabs -->
+
+          <div class="row feture-tabs" data-aos="fade-up">
+
+            <div class="col-lg-6">
+              <img src="{{m2.image.url}}" class="img-fluid" alt="">
+            </div>
+
+            <div class="col-lg-6">
+              <h3>{{m2.title}}</h3>
+          
+              <!-- Contenu des onglets -->
+              <div class="tab-content">
+          
+                <div class="tab-pane fade show active" id="tab1">
+                  <p>{{m2.text}}</p>
+                  <div class="d-flex align-items-center mb-2">
+                    <i class="bi bi-check2"></i>
+                    <h4>{{m2.meth_1}}</h4>
+                  </div>
+                  <p>{{m2.text_meth_1}}</p>
+                  <div class="d-flex align-items-center mb-2">
+                      <i class="bi bi-check2"></i>
+                      <h4>{{m2.meth_2}}</h4>
+                  </div>
+                  <p>{{m1.text_meth_2}}</p>
+                  <div class="d-flex align-items-center mb-2">
+                      <i class="bi bi-check2"></i>
+                      <h4>{{m2.meth_3}}</h4>
+                  </div>
+                  <p>{{m2.text_meth_3}}</p>
+                </div><!-- Fin du contenu de l'onglet 1 -->          
+              </div>
+            </div>
+          </div>
+          <!-- End Feature Tabs -->
+
+          <div class="row feture-tabs" data-aos="fade-up">
+            <div class="col-lg-6">
+              <h3>{{m3.title}}</h3>
+          
+              <!-- Contenu des onglets -->
+              <div class="tab-content">
+          
+                <div class="tab-pane fade show active" id="tab1">
+                  <p>{{m3.text}}</p>
+                  <div class="d-flex align-items-center mb-2">
+                    <i class="bi bi-check2"></i>
+                    <h4>{{m3.meth_1}}</h4>
+                  </div>
+                  <p>{{m3.text_meth_1}}</p>
+                <div class="d-flex align-items-center mb-2">
+                    <i class="bi bi-check2"></i>
+                    <h4>{{m3.meth_2}}</h4>
+                </div>
+                <p>{{m3.text_meth_2}}</p>
+                <div class="d-flex align-items-center mb-2">
+                    <i class="bi bi-check2"></i>
+                    <h4>{{m3.meth_3}}</h4>
+                </div>
+                <p>{{m3.text_meth_3}}</p>
+                </div><!-- Fin du contenu de l'onglet 3 -->
+          
+              </div>
+            </div>
+          
+            <div class="col-lg-6">
+              <img src="{{m3.image.url}}" class="img-fluid" alt="">
+            </div>
+        </div>
+          <!-- End Feature Tabs -->
+        
+    </section>
+        <!-- End Features Section -->
+
+    <!-- ======= Team Section ======= 
+    <section id="team" class="team">
+      
+        <div class="container" data-aos="fade-up">
+  
+          <header class="section-header">
+            <h2>{{teams.text_cadre}}</h2>
+            <p>{{teams.sous_text_cadre}}</p>
+          </header>
+      
+          <div class="row gy-4">
+            {% for cadre in cadres%}
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="{{cadre.display}}">
+              <div class="member">
+                <div class="member-img">
+                  <img src="{{cadre.image.url }}" class="img-fluid" alt="">
+                  <div class="social">
+                    <a href=""><i class="bi bi-twitter"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4>{{cadre.name}}</h4>
+                  <span>{{cadre.post}}</span>
+                  <p>{{cadre.text}}</p>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+      
+          </div>
+      
+        </div>
+      
+    </section>
+    End Team Section -->
+    <!-- ======= Clients Section ======= -->
+
+
+    <section id="clients" class="clients">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>{{teams.text_outil}}</h2>
+          <p>{{teams.sous_text_outils}}</p>
+        </header>
+
+        <div class="clients-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            {% for outil in outils %}
+            <div class="swiper-slide"><img src="{{ outil.image.url }}" class="img-fluid" alt=""></div>
+            {% endfor%}
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+    </section><!-- End Clients Section -->
+
+    
+<!-- End Recent Blog Posts Section -->
+  </main><!-- End #main -->
+
+{% endblock content%}
