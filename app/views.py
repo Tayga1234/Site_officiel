@@ -28,8 +28,8 @@ def subscribe(request):
 
                     # Envoyer un email de confirmation
                     send_mail(
-                        'Subscription Confirmation',
-                        'Thank you for subscribing to our newsletter!',
+                        'Mail de confirmation',
+                        'Bonjour très cher nouvel abonné! Nous sommes heureux de vous compter parmi nous.',
                         settings.DEFAULT_FROM_EMAIL,
                         [email],
                         fail_silently=False,
