@@ -141,6 +141,7 @@ def service(request):
     section = Section.objects.first()
     teams = Team.objects.first()
     outils = OutilsLangage.objects.all()
+    partenaires= Partenaire.objects.all()
 
     context={
         'headers': headers,
@@ -155,6 +156,7 @@ def service(request):
         'section':section,
         'teams': teams,
         'outils': outils,
+        'partenaires':partenaires,
         
     }
     return render(request, 'service.html',context)
