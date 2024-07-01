@@ -39,7 +39,7 @@ def subscribe(request):
             except Exception as e:
                 # Log l'erreur et afficher un message d'erreur
                 logger.error(f"Error during subscription: {e}")
-                messages.error(request, 'Merci pour votre abonnement')
+                messages.error(request, "Une erreur s'est produite lors de l'enregistrement")
 
         else:
             messages.error(request, 'Please enter a valid email address.')
