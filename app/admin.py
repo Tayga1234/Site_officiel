@@ -26,7 +26,7 @@ admin.site.register(Service)
 admin.site.register(Offre)
 admin.site.register(Poste)
 admin.site.register(Projet)
-
+admin.site.register(Partenaire)
 admin.site.register(Team)
 admin.site.register(PosteMembre)
 admin.site.register(Methode1)
