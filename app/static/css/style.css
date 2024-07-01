@@ -386,9 +386,9 @@ section {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(2, 36, 98, 0.892);
+  background: rgba(53, 59, 72, 0.438);
   transition: 0.3s;
-}
+} 
 
 .navbar-mobile .mobile-nav-toggle {
   position: absolute;
@@ -730,16 +730,16 @@ section {
   box-shadow: 0px 0 5px rgba(1, 41, 112, 0.08);
   background: #fff;
   position: relative;
-  border-radius: 10%;
+  border-radius: 0;
 }
 
 .constructions .card-item .card-bg {
-  min-height: 100px;
+  min-height: 300px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
 }
+
 .constructions .card-item .card-body {
   padding: 30px;
 }
@@ -971,7 +971,7 @@ section {
   width: 100%;
   height: 100%;
   margin-top:9%;
-  background: rgb(219,243,254);
+  background: url(../img/s.jpg) no-repeat center bottom;
   background-size: cover;
 }
 @media (max-width: 1400px) {
@@ -1028,12 +1028,12 @@ section {
 .services .service-box h3 {
   color: #444444;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 20px; 
   margin-bottom: 10px;
 }
 
 .services .service-box p {
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .services .service-box .read-more {
@@ -1108,7 +1108,7 @@ section {
 
 .services .service-box.red .icon {
   color: #e9222c;
-  background: #fef7f8;
+  background: #ffdbdd;
 }
 
 .services .service-box.red .read-more {
@@ -1116,7 +1116,7 @@ section {
 }
 
 .services .service-box.red:hover {
-  background: #e9222c;
+  background: #ffdbdd;
 }
 
 .services .service-box.purple {
@@ -1916,7 +1916,7 @@ section {
 #heroT {
   margin-top: 7%;
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   position: relative;
   background: url("../img/accteam.jpg") top center;
   background-size: cover;
@@ -2062,7 +2062,6 @@ section {
 .team {
   background: #fff;
   padding: 60px 0;
-  margin-top: 9%;
 }
 
 .team .member {
@@ -2285,7 +2284,7 @@ section {
 
 .contact .info-box {
   color: #444444;
-  background: #fafbff;
+  background: #f7f9ff;
   padding: 30px;
 }
 
@@ -2310,7 +2309,7 @@ section {
 }
 
 .contact .php-email-form {
-  background: #fafbff;
+  background: #ebefff;
   padding: 30px;
   height: 100%;
 }
@@ -2974,6 +2973,30 @@ section {
 
 .footer .footer-newsletter form input[type=submit]:hover {
   background: #5969f3;
+}
+.messages {
+  margin-top: 20px;
+}
+
+.alert {
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.alert-success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.alert-info {
+  background-color: #d1ecf1;
+  color: #0c5460;
+}
+
+.alert-danger {
+  background-color: #f8d7da;
+  color: #721c24;
 }
 
 .footer .footer-top {
