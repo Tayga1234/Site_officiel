@@ -109,6 +109,7 @@ def about(request):
     liens = Lien.objects.all()
     offres = Offre.objects.all()
     infos = Info.objects.first()
+    partenaires = Partenaire.objects.all()
 
     context={
         'headers': headers,
@@ -121,6 +122,7 @@ def about(request):
         'liens':liens,
         'offres':offres,
         'infos':infos,
+        'partenaires':partenaires,
     }
     
     return render(request, 'about.html',context)
