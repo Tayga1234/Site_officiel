@@ -69,8 +69,8 @@ def home(request):
     if request.method == 'POST':
         email = request.POST.get('email')
         if email:
-            if not Subscriber.objects.filter(email=email).exists():
-                Subscriber.objects.create(email=email)
+            if not subscribe.objects.filter(email=email).exists():
+                subscribe.objects.create(email=email)
                 messages.success(request, 'Merci pour votre abonnement !')
             else:
                 messages.error(request, 'Cet email est déjà abonné.')
@@ -110,6 +110,7 @@ def about(request):
     offres = Offre.objects.all()
     infos = Info.objects.first()
     partenaires = Partenaire.objects.all()
+    doms = Doms.objects.all()
 
     context={
         'headers': headers,
@@ -123,6 +124,7 @@ def about(request):
         'offres':offres,
         'infos':infos,
         'partenaires':partenaires,
+        'doms':doms,
     }
     
     return render(request, 'about.html',context)

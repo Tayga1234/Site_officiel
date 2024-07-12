@@ -2410,14 +2410,11 @@ section {
 }
 
 .ifram_d{
-  background-color:#ffffff;
-  width: 170%;
+  width: 125%;
   height: 100%;
   border: 0;
   padding: 5%;
-  padding-left:-4%;
-  margin-left: -11%;
-  margin-right: 20%;
+  margin-left: -14%;
   overflow: hidden;
   display: block;
 }

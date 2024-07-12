@@ -329,3 +329,6 @@ class ContactMessage(models.Model):
 
     def __str__(self):
         return f"Message from {self.name} ({self.email})"
+    
+class Doms(models.Model):
+    image = models.ImageField(upload_to='media/')

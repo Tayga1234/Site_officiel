@@ -15,6 +15,7 @@ admin.site.register(Question)
 admin.site.register(Temoin)
 admin.site.register(Info)
 admin.site.register(Section)
+admin.site.register(Doms)
 
 
 admin.site.register(About)
