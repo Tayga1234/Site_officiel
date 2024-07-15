@@ -1914,7 +1914,7 @@ section {
 # Hero Section Team
 --------------------------------------------------------------*/
 #heroT {
-  margin-top: 7%;
+  margin-top: 9%;
   width: 100%;
   height: 80vh;
   position: relative;
@@ -2405,6 +2405,16 @@ section {
   border: 0;
   margin: 0;
   padding: 0 10% 2% 10%;
+  overflow: hidden;
+  display: block;
+}
+
+.ifram_d{
+  width: 125%;
+  height: 100%;
+  border: 0;
+  padding: 5%;
+  margin-left: -14%;
   overflow: hidden;
   display: block;
 }
