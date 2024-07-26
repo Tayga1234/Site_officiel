@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <link rel="icon" href="{{ headers.logo.url }}" type="image/x-icon">
-  <title>Urbain_Plus - {% block title %}{% endblock %}</title>
+  <title>Urbain_Plus {% block title %}{% endblock %}</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -35,7 +35,7 @@
   <header id="header" class="header fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-      <a href="#" class="logo d-flex align-items-center">
+      <a href="{% url 'home' %}" class="logo d-flex align-items-center">
         <img src="{{ headers.logo.url }}" alt="">
         <span>{{headers.title}}</span>
       </a>
@@ -118,9 +118,11 @@
           <div class="col-lg-2 col-6 footer-links">
             <h4> {{footers.lien}}</h4>
             <ul>
-              {% for lien in liens%}
-              <li><i class="bi bi-chevron-right"></i> <a href="#">{{lien.lien}}</a></li>
-              {% endfor %}
+              <li><a class="bi bi-chevron-right" href="{% url 'home' %}">{{headers.onglet_1}}</a></li>
+              <li><a class="bi bi-chevron-right" href="{% url 'service' %}">{{headers.onglet_3}}</a></li>
+              <li><a class="bi bi-chevron-right" href="{% url 'team' %}">{{headers.onglet_4}}</a></li>
+              <li><a class="bi bi-chevron-right" href="{% url 'contact' %}">{{headers.onglet_5}}</a></li>
+              <li><a class="bi bi-chevron-right" href="{% url 'about' %}">{{headers.onglet_2}}</a></li>
             </ul>
           </div>
 
@@ -139,7 +141,7 @@
               {{infos.lieu1}} <br>
               {{infos.lieu2}}<br>
               {{infos.lieu3}}<br><br>
-              <strong>Téléphone:</strong> {{infos.contact}}<br>
+              <strong>Contact:</strong> {{infos.contact}} / {{infos.contact2}}<br>
               <strong>Email:</strong> {{infos.email}}<br>
             </p>
 

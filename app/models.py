@@ -11,10 +11,10 @@ class Header(models.Model):
     logo = models.ImageField(upload_to='media/')
     title = models.CharField(max_length=200)#nom entreprise
     onglet_1 = models.CharField(max_length=200)#home
-    onglet_2 = models.CharField(max_length=200)#about
-    onglet_3 = models.CharField(max_length=200)#service
-    onglet_4 = models.CharField(max_length=200)#team
-    onglet_5 = models.CharField(max_length=200)#contact
+    onglet_2 = models.CharField(max_length=200)#servicet
+    onglet_3 = models.CharField(max_length=200)#eam
+    onglet_4 = models.CharField(max_length=200)#contact
+    onglet_5 = models.CharField(max_length=200)#about
 
 class Footer(models.Model):
     text_abonne = models.CharField(max_length=200)#home
@@ -332,3 +332,13 @@ class ContactMessage(models.Model):
     
 class Doms(models.Model):
     image = models.ImageField(upload_to='media/')
+
+from django.db import models
+
+class EmailConfiguration(models.Model):
+    email_host_user = models.CharField(max_length=255)
+    email_host_password = models.CharField(max_length=255)
+    default_from_email = models.CharField(max_length=255)
+    
+    def __str__(self):
+        return self.email_host_user

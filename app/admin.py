@@ -16,7 +16,7 @@ admin.site.register(Temoin)
 admin.site.register(Info)
 admin.site.register(Section)
 admin.site.register(Doms)
-
+admin.site.register(EmailConfiguration)
 
 admin.site.register(About)
 admin.site.register(Domaine)

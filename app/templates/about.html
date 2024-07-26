@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
     {% load static%}
     {% block about %}active{% endblock %}
-    {% block title %}About{% endblock %}
+    {% block title %} - About{% endblock %}
 {% block content %}
 
   <main id="main">
@@ -58,7 +58,7 @@
               <h3>{{abouts.Name_Urbain}}</h3>
               <ul>
                 <li><strong>Date de création </strong> : Février 2022 </li>
-                <li><strong>Contact </strong> : +226 70 03 84 14/ 51 11 09 09 </li>
+                <li><strong>Contact </strong> : {{infos.contact}} / {{infos.contact2}} </li>
                 <li><strong>Email </strong> : <a href="#">{{abouts.Email_Urbain}}</a></li>
                 <li><strong>Adresse </strong> : BV 30045 Ouaga KOSSYAM 10010 Ouaga</li>
                 <li><strong>Horaire </strong> : {{abouts.Horaire}}</li>
